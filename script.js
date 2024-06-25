@@ -104,12 +104,16 @@ percent.addEventListener('click', () => {
 
 //apaga o ultimo caractere como se fosse o backspace
 remove.addEventListener('click', () => {
-    if(sign === ''){
+    if(isfirstval === false){
         firstval = firstval.slice(0, -1)
         display.innerHTML = firstval
-    } else if (sign != ''){
+    } else if (secondval != ''){
         secondval = secondval.slice(0, -1)
         display.innerHTML = secondval
+    } else if (firstval === resultval) {
+        remove.disabled = true
+        remove.style.background = '#7f7f7f'
+        remove.style.cursor = 'not-allowed'
     }
 })
 
