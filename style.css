@@ -1,35 +1,33 @@
-*{
+* {
     margin: 0;
-    padding: 0;
 }
 
-html, body #fullheight {
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(19, 18, 18);
+body {
+    background-color: rgb(39, 38, 39);
 }
 
 #calculadora {
-    max-width: 520px;
-    min-width: 518px;
-    height: 100%;
+    margin: auto;
+    margin-top: 50px;
     background-color: black;
+    width: 460px;
+    border-radius: 10px;
 }
 
 .display {
-    display: flex;
+    background-color: rgb(56, 54, 54);
     overflow-x: auto;
-    align-items: flex-end;
-    color: white;
-    height: 40vh;
-}
-
-.display span {
-    margin-left: auto;
-    font-size: 100px;
-    justify-self: flex-end;
+    overflow-y: hidden;
+    width: 420px;
+    height: 100px;
+    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 10px 10px 0px 0;
+    font-size: 5rem;
+    color: aliceblue;
+    text-align: right;
 }
 
 ::-webkit-scrollbar-track {
@@ -37,88 +35,158 @@ html, body #fullheight {
 }
 ::-webkit-scrollbar {
     background: #464545;
-    height: 10px;
 }
 ::-webkit-scrollbar-thumb {
     background: #696868;
 }
 
-.numeros {
-    width: 100%;
-    height: 58%;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-row-gap: 10px;
-}
-
 .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    color: white;
+    text-align: center;
+    margin: 5px;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
-    width: 110px;
-    height: 110px;
-    padding: 10px;
+    border: none;
+    outline: 0;
     cursor: pointer;
-    align-self: center;
-    justify-self: center;
-}
-
-.percent {
-    background-color: #A5A5A5;
-    border: none;
-    color: black;
-}
-
-.item1 {
-    background-color: #A5A5A5;
-    border: none;
-    color: black;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(53, 53, 53);
 }
 
 .item2 {
-    background-color: #FF9F0A;
+    text-align: center;
+    margin: 5px;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
     border: none;
+    outline: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(172, 97, 0);
 }
 
-.numbers {
-    background-color: #343434;
+.item1 {  
+    text-align: center;
+    margin: 5px;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
     border: none;
+    outline: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(97, 97, 97);
 }
 
-.zero{
-    background-color: #343434;
-    width: 250px;
-    border-radius: 135px;
-    grid-column: span 2;
-    border: none;
+.item1:hover {
+    background-color: rgb(145, 143, 143);
 }
 
-@media screen and (max-width: 520px) {
+.item1:active {
+    background-color: rgb(216, 213, 213);
+}
+
+.item2:hover {
+    background-color: rgb(211, 121, 4);
+}
+
+.item2:active {
+    background-color: rgb(255, 162, 41);
+}
+
+.numbers:hover{
+    background-color:rgb(87, 87, 87) ;
+}
+
+.numbers:active{
+    background-color:rgb(121, 121, 121) ;
+}
+
+.zero {
+    border-radius: 50px;
+    width: 215px;
+}
+
+@media screen and (max-width: 500px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    html, body #fullheight {
+        height: 100%;
+        width: 100vw;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(19, 18, 18);
+    }
+
     #calculadora {
-        max-width: 415px;
-        min-width: 415px;
+        margin: 0;
+        max-width: 100vw;
+        min-width: 100vw;
         height: 100%;
         background-color: black;
     }
     
+    .display {
+        display: flex;
+        padding: 0;
+        overflow-x: auto;
+        align-items: flex-end;
+        color: white;
+        width: 100%;
+        background-color: black;
+        height: 35vh;
+    }
+
     .display span {
         margin-left: auto;
         font-size: 70px;
         justify-self: flex-end;
     }
-
+    
+    ::-webkit-scrollbar-track {
+        background-color: #494646;
+    }
+    ::-webkit-scrollbar {
+        background: #464545;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #696868;
+    }
+    
+    .numeros {
+        width: 100%;
+        height: 58%;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-row-gap: 5px;
+    }
+    
     .item {
-        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
         color: white;
         border-radius: 100%;
-        width: 95px;
-        height: 95px;
+        width: 110px;
+        height: 110px;
         padding: 10px;
         cursor: pointer;
+        align-self: center;
+        justify-self: center;
     }
 
     .percent {
@@ -145,11 +213,115 @@ html, body #fullheight {
 
     .zero{
         background-color: #343434;
-        width: 190px;
+        width: 220px;
         border-radius: 135px;
         grid-column: span 2;
         border: none;
     }
+}
+
+@media screen and (max-width: 445px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
     
+    html, body #fullheight {
+        height: 100%;
+        width: 100vw;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(19, 18, 18);
+    }
+
+    #calculadora {
+        margin: 0;
+        max-width: 100vw;
+        min-width: 100vw;
+        height: 100%;
+        background-color: black;
+    }
     
+    .display {
+        display: flex;
+        padding: 0;
+        overflow-x: auto;
+        align-items: flex-end;
+        color: white;
+        width: 100%;
+        background-color: black;
+        height: 35vh;
+    }
+
+    .display span {
+        margin-left: auto;
+        font-size: 70px;
+        justify-self: flex-end;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: #494646;
+    }
+    ::-webkit-scrollbar {
+        background: #464545;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #696868;
+    }
+    
+    .numeros {
+        width: 100%;
+        height: 58%;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-row-gap: 5px;
+    }
+    
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: white;
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        cursor: pointer;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .percent {
+        background-color: #A5A5A5;
+        border: none;
+        color: black;
+    }
+    
+    .item1 {
+        background-color: #A5A5A5;
+        border: none;
+        color: black;
+    }
+    
+    .item2 {
+        background-color: #FF9F0A;
+        border: none;
+    }
+    
+    .numbers {
+        background-color: #343434;
+        border: none;
+    }
+
+    .zero{
+        background-color: #343434;
+        width: 220px;
+        border-radius: 135px;
+        grid-column: span 2;
+        border: none;
+    }
 }

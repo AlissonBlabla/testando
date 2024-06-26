@@ -93,6 +93,7 @@ equal.addEventListener('click', () => {
 function checklength() {
     if(resultval >= 3){
         display.innerHTML = resultval.toFixed(3)
+        return;
     }
 }
 
@@ -110,7 +111,7 @@ remove.addEventListener('click', () => {
     } else if (secondval != ''){
         secondval = secondval.slice(0, -1)
         display.innerHTML = secondval
-    } else if (firstval === resultval) {
+    } else if (firstval == resultval) {
         remove.disabled = true
         remove.style.background = '#7f7f7f'
         remove.style.cursor = 'not-allowed'
@@ -125,6 +126,11 @@ clear.addEventListener('click', () => {
         secondval = ''
         sign = ''
         resultval = 0
+
+        // Reativar o botão 'del'
+        remove.disabled = false
+        remove.style.background = ''
+        remove.style.cursor = ''
 })
 
 
