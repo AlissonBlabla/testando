@@ -186,7 +186,7 @@ body.light-mode .zero {
         color: white;
         width: 100%;
         background-color: black;
-        height: 32vh;
+        height: 28vh;
     }
 
     .display span {
@@ -222,8 +222,8 @@ body.light-mode .zero {
         font-size: 40px;
         color: white;
         border-radius: 100%;
-        width: 110px;
-        height: 110px;
+        width: 90px;
+        height: 90px;
         padding: 10px;
         cursor: pointer;
         align-self: center;
@@ -254,7 +254,7 @@ body.light-mode .zero {
 
     .zero {
         background-color: #343434;
-        width: 220px;
+        width: 200px;
         border-radius: 135px;
         grid-column: span 2;
         border: none;
@@ -321,7 +321,7 @@ body.light-mode .zero {
         color: white;
         width: 100%;
         background-color: black;
-        height: 32vh;
+        height: 28vh;
     }
 
     .display span {
@@ -357,8 +357,8 @@ body.light-mode .zero {
         font-size: 40px;
         color: white;
         border-radius: 100%;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         padding: 10px;
         cursor: pointer;
         align-self: center;
@@ -389,7 +389,7 @@ body.light-mode .zero {
 
     .zero {
         background-color: #343434;
-        width: 220px;
+        width: 200px;
         border-radius: 135px;
         grid-column: span 2;
         border: none;
