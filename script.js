@@ -97,6 +97,13 @@ function checklength() {
     }
 }
 
+//função secreta que ativa o modo claro
+percent.addEventListener('click', () => {
+    if(firstval == 555){
+        document.body.classList.toggle('light-mode'); 
+    }
+})
+
 //fazendo o numero virar porcentagem
 percent.addEventListener('click', () => {
     firstval = firstval / 100
@@ -133,7 +140,9 @@ clear.addEventListener('click', () => {
         remove.style.cursor = ''
 })
 
+//função secreta que ativa o modo claro
+function trocarModo() {
+    document.body.classList.toggle('light-mode');
+}
 
-
-
-
+equal.addEventListener('dblclick', trocarModo)
