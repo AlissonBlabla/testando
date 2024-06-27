@@ -83,19 +83,11 @@ equal.addEventListener('click', () => {
         resultval = firstval / secondval
     }
 
-    checklength()
-    display.innerHTML = resultval
+    display.innerHTML = resultval.toFixed(3)
     firstval = resultval
     secondval = ''
+    console.log(resultval)
 })
-
-//chegando o tamanho da operação e limitando os numeros apos a virgula
-function checklength() {
-    if(resultval >= 3){
-        display.innerHTML = resultval.toFixed(3)
-        return;
-    }
-}
 
 //função secreta que ativa o modo claro
 percent.addEventListener('click', () => {
